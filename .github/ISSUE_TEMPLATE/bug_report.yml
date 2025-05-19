@@ -1,0 +1,47 @@
+name: Bug Report
+description: File a bug report.
+title: "[Bug]: "
+labels: ["bug"]
+
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Enter the version of Tagr you are using.
+      placeholder: E.g. 1.0.0
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-behavior
+    attributes:
+      label: Current Behavior
+      description: Describe what is currently happening. If there was an error, please include the full error message or traceback.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: Describe what you expected to happen instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: Reproduction Steps
+      description: Provide a step-by-step guide to reproduce the issue.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      description: "Before submitting your report, please confirm the following:"
+      options:
+        - label: I've searched the issue tracker to make sure this issue hasn't been reported already.
+          required: true
