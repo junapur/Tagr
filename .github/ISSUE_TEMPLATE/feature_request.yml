@@ -1,0 +1,38 @@
+name: Feature Request
+description: Suggest a new feature or improvement.
+title: "[Feature]: "
+labels: ["enhancement"]
+
+body:
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Feature Description
+      description: Describe the feature you'd like to see added. What should it do?
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Why Is This Feature Useful?
+      description: Explain why this feature would be helpful or important. What problem does it solve or what value does it add?
+    validations:
+      required: true
+
+  - type: textarea
+    id: design-ideas
+    attributes:
+      label: Design or Implementation Ideas (Optional)
+      description: If you have thoughts on how the feature could be designed or implemented, share them here.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      description: "Before submitting your request, please confirm the following:"
+      options:
+        - label: I've searched the issue tracker to make sure this feature hasn't been requested already.
+          required: true
