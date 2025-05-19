@@ -1,0 +1,23 @@
+[project]
+name = "tagr"
+version = "0.1.0"
+description = "A minimal, user-friendly CLI tool for editing audio file metadata."
+readme = "README.md"
+license = "MIT"
+requires-python = "~=3.13.0"
+authors = [{ name = "June", email = "junapur@proton.me" }]
+maintainers = [{ name = "June", email = "junapur@proton.me" }]
+keywords = ["CLI", "Music", "Audio"]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/junapur/Tagr"
+Repository = "https://github.com/junapur/Tagr"
+Issues = "https://github.com/junapur/Tagr/issues"
+
+[project.scripts]
+tagr = "tagr:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
