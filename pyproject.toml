@@ -53,3 +53,12 @@ select = [
     "TD",    # flake8-todos
     "PTH",   # flake8-use-pathlib
 ]
+
+ignore = [
+    # The following conflict with Ruff's formatter:
+    # https://docs.astral.sh/ruff/formatter/#conflicting-lint-rules
+    "E111",
+    "E114",
+    "E117",
+    "E501",
+]
