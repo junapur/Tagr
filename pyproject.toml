@@ -26,6 +26,9 @@ build-backend = "hatchling.build"
 linting = ["ruff==0.11.10"]
 type-checking = ["pyright==1.1.400"]
 
+[tool.uv]
+default-groups = "all"
+
 [tool.pyright]
 pythonVersion = "3.13"
 typeCheckingMode = "strict"
