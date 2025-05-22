@@ -8,7 +8,7 @@ requires-python = "~=3.13.0"
 authors = [{ name = "June", email = "junapur@proton.me" }]
 maintainers = [{ name = "June", email = "junapur@proton.me" }]
 keywords = ["CLI", "Music", "Audio"]
-dependencies = []
+dependencies = ["click==8.2.1"]
 
 [project.urls]
 Homepage = "https://github.com/junapur/Tagr"
@@ -16,7 +16,7 @@ Repository = "https://github.com/junapur/Tagr"
 Issues = "https://github.com/junapur/Tagr/issues"
 
 [project.scripts]
-tagr = "tagr:main"
+tagr = "tagr.cli:cli"
 
 [build-system]
 requires = ["hatchling"]
