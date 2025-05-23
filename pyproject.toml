@@ -53,7 +53,6 @@ select = [
     "RET",   # flake8-return
     "SIM",   # flake8-simplify
     "TC",    # flake8-type-checking
-    "TD",    # flake8-todos
     "PTH",   # flake8-use-pathlib
 ]
 
